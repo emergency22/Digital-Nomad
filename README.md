@@ -1,84 +1,197 @@
-# Unit 5 Project Intro
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a name="readme-top"></a>
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-Welcome to the Unit 5 Project. This project is a starting point that you'll be making extensive changes to as you design and build your own application. The code provided here is a starting point meant to remind you of patterns that we've been using, as well as show you a few new patterns that you might find useful. This document has 2 main sections:
 
-- Deliverables
-- Infrastructure
 
-> **NOTE:** There's a lot to this project, so we've split out the more tactical "how to" guidance into a [separate README](./README-SETUP.md) that you'll want to review and follow the included instructions for after you read through this one.
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![Contributors][contributors-shield]][contributors-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Deliverables
 
-These are the required deliverables/reviews that you and your team will need to create during the project. _The status of each of these will be tracked in the GitHub project that your team is using._
 
-### Team Deliverables
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+    <img src="resources/images/logo.png" alt="Logo" width="80" height="80">
 
-* **Design Document: Problem Statement** Your team’s technical design specification. Complete [this template](resources/design-document.md). This should explain the product you'll be creating and what problem it solves.
-* **Design Document: Peer Team Review** Another team will review your technical design to help improve it. Each team will review at least one other teams design.
-* **Design Document: Instructor Review** One of the instructors will review your technical design after you've create it and reviewed it with another team.
-* **Team Charter:** Statements of how your team will work to ensure constructive collaboration, fairness, that everyone is learning and contributing. Complete [this template](resources/team-charter.md).
-* **Working Product:** Your project, as a working website deployed to AWS.
-* **Team Reflection:** A final retrospective with a few questions to answer as a team to reflect on what you have accomplished and learned throughout the project. Complete [this template](resources/team-reflection.md).
+<h3 align="center">Digital Nomad/h3>
 
-### Individual Deliverables
+  <p align="center">
+    Find Your Destination
+    <br />
+    <br />
+    <br />
+    <a href="#usage">View Demo</a>
+  </p>
+</div>
 
-* **Accomplishment Tracking:** You'll be keeping a log of your individual accomplishments and lessons learned throughout this project week-by-week. Keeping a high level record of your accomplishments throughout your career is useful for your career growth and promotion. Use [this template](resources/individual-accomplishments-template.md) as a starting point, but you can keep this log in whatever tool/location you'd like.
 
-## Technical Learning Objectives
 
-This project is very open-ended and you/your team will be doing a lot of creative thinking to decide what you want to build. That said, there are several technical learning objectives that each team must meet. You should review the [Technical Learning Objectives](./resources/technical-objectives.md) as you familiarize yourself with the project. As part of the team reflection/retrospective you'll fill out this document with your team to document how you met the different objectives.
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-## Project Starter Infrastructure
+---
 
-Your team has been provided with a website, hosted by [CloudFront](https://aws.amazon.com/cloudfront/), that talks to an Amazon API Gateway endpoint. (A web front-end is likely new for several of you, as your unit projects so far have been all service development.) The Amazon API Gateway connects to a Lambda service, which stores its data in DynamoDB, an architecture that we’ve used several times on unit projects so far. The starter code provided contains a website that uses the playlist service you created in Unit 3. Below, Image 1 describes the architecture of the starter project.
+## Synopsis
 
-![Image 1: The architecture of your starter project](resources/images/architecture_diagram.png)
+<img src="resources/images/frontpage.png">
 
-*Image 1: Architecture diagram for the starter project*
+Digital Nomad is a "mid-stone" group project at Nashville Software School. Contributors to this project include Alex Murillo, Erika Smith, Matt Marotta, and Steve Winters.
 
-### Introduction to the Starter Code
+Digital Nomad is a service that allows users to search for travel destinations based on criteria such as access to beaches, night life, etc. Users are then provided a list of potential destinations, which they can then save for later viewing at a provided URL.
 
-Unlike our unit projects in the past, this project will have two code bases.
+---
 
-[One code base](./MusicPlaylistServiceLambda) will be for your Lambda service code, similar to what we’ve seen previously. This will contain code that designs and runs your service APIs, as well as packages to interact with and test your service.
+## Lessons Learned
 
-The [second code base](./web) will contain code for your website:
+Concise and detailed initial planning will pay dividends. Particularly if the project planning is well thought out. This will help avoid future confusion and the need to reinvent the wheel. This also speaks to breaking down tasks into manageable pieces.
 
-* HTML: The content of your web pages
-* CSS: The styling and formatting of your web pages
-* JavaScript: The code that runs when a user interacts with the web pages, some of which triggers the browser to send requests to the service
+While I did have some limited experience, the front end work was challenging in a good way, and helped to further develop my skills in that area. The experience I had with Java also helped me understand Javascript with its similar syntax.
 
-Often times these are separated into different repositories, but for simplicity’s sake we've kept them in the same repository for this project.
+I also discovered that it may be best to have team members focus on particular areas as opposed to switching roles. I feel we may have been more efficient had we "specialized" in certain areas.
 
-_Both of these should be considered starting points/example code. You will end up removing/replacing all of it as you build your own project._
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Deploying
+---
 
-We'll be using GitHub Actions to deploy the code to AWS. One of the first tasks that you'll do as a team is to configure the repository for this. Once that's completed your code should build and deploy as described in the [next README](./README-SETUP.md).
+## Build Tools
 
-### AWS Resources
+* Java
+* Javascript
+* HTML
+* CSS
+* Docker
+* AWS DynamoDB
+* AWS CloudFront
+* AWS CloudFormation
 
-Each team has one AWS account they will share to deploy their website and service. This is where all of your changes will be merged together and visible. Your team's account will be named something like `SE_Unit_5_Group_TEAMNAME` and will be available for you to configure like you've done in previous units.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Your website!
 
-To access your website, you'll need to build it first. The [next README](./README-SETUP.md) has instructions on the different ways we'll be doing this.
 
-## How Your Website Works
+<!-- GETTING STARTED -->
+## Getting Started
 
-Creating each page of your website requires a surprising amount of interactions between different JavaScript files and between our frontend and our backend. Our view playlist page makes 3 separate calls to our MusicPlaylistService.
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-Let’s look at one piece - adding the header to our page. This requires the full end to end flow of HTML to JS to backend service all the way back to updating our HTML.
+### Prerequisites and Installation
 
-![Image 2: The end to end flow of HTML to JS to the backend service, and the return to HTML.](resources/images/sequence_diagram.png)
+1. Create or use an existing Amazon AWS account.
+2. Install the latest version of AWS CLI. [Link to documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+3. Install the latest version of AWS SAM CLI. [Link to documentation](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html)
+4. Install NodeJS before you can run some of the commands below (the `npm` ones).
 
-*Image 2: The end to end flow of HTML to JS to the backend service, and the return to HTML*
+- On Windows / WSL:
+```shell
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&\
+sudo apt-get install -y nodejs
+```
+- On macOS:
+```shell
+brew install node
+```
 
-Two important things to call out:
+### Run Locally
 
-1. To call our backend we are always going through our `MusicPlaylistClient`.
-2. The `DataStore` uses a different pattern than we’ve seen previously. It has two member variables - the state, which is a JavaScript object that should hold all of the data being used across a webpage, and a list of listeners. The listeners are methods in other objects. Anytime `set` or `setState` is called it loops through all of those methods and executes each one. So in each of those listeners the first thing we do is check to see if the data that they rely on is null. Then, if it’s not null, we update the html to reflect the new data. You can take a look at the `addPlaylistToPage()` method in `viewPlaylist.js` for an example of this.
+3. Run the Lambda service (aka the backend):
+    - Build the Java code: `sam build`
+    - Create an S3 bucket: `aws s3 mb s3://YOUR_BUCKET`
+    - Deploy the SAM template: `sam deploy --s3-bucket BUCKET_FROM_ABOVE --parameter-overrides S3Bucket=BUCKET_FROM_ABOVE FrontendDeployment=local`
+      > **NOTE:** _Yes you have to provide the same S3 bucket name twice. Yes this is annoying._
+    - Run the local API: `sam local start-api --warm-containers LAZY`
+4. Run a local web server (aka the frontend):
+    - CD into the web directory: `cd web`
+    - Install dependencies : `npm install`
+    - Run the local server: `npm run run-local`
+    -  > **NOTE:** Only songs found in the song table can be added to the playlist.
 
-## Project Setup
+After doing all of this, you will have a server running on port `8000` - you can access it by going to [http://localhost:8000](http://localhost:8000) in your browser.
 
-This document has provided an overview of the project as a whole. For more specifics on how to configure the project and your GitHub repo/AWS account, continue by reading [README-SETUP.md](./README-SETUP.md).
+To stop either the local backend (the `sam local...` command) or local frontend (the `npm run...`) command, simply press `Ctrl-C` in the terminal where the process is running.
+
+**SONGS TABLE**
+- `TITLE: The Yellow Submarine ARTIST: The Beatles`
+- `TITLE: The Lonely Island ARTIST: I'm On A Boat`
+- `TITLE: Come Sail Away ARTIST: Styx`
+- `TITLE: Sailing ARTIST: Christopher Cross`
+- `TITLE: Rock The Boat ARTIST: Hues Corporation`
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+
+[Party Playlist Demo](https://user-images.githubusercontent.com/57022409/209223943-2804c2cd-f6af-41b7-abe0-5774fd682b4a.mp4)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTACT -->
+## Contact
+
+Alex Murillo - alex.d.murillo@protonmail.com
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/Traversg/Party_Playlist.svg?style=for-the-badge
+[contributors-url]: https://github.com/Traversg/Party_Playlist/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
+[forks-url]: https://github.com/github_username/repo_name/network/members
+[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
+[stars-url]: https://github.com/github_username/repo_name/stargazers
+[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
+[issues-url]: https://github.com/github_username/repo_name/issues
+[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
+[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/travers-geoffray/
+[product-screenshot]: resources/images/home-page.png
+[DynamoDb]: https://img.shields.io/badge/AWS_DynamoDB-yellow?style=for-the-badge&logo=amazondynamodb&logoColor=4053D6
+[DynamoDb-url]: https://aws.amazon.com/dynamodb/
+[Lambda]: https://img.shields.io/badge/AWS_Lambda-blue?style=for-the-badge&logo=awslambda&logoColor=FF9900
+[Lambda-url]: https://aws.amazon.com/lambda/
+[API Gateway]: https://img.shields.io/badge/AWS_API_Gateway-black?style=for-the-badge&logo=amazonapigateway&logoColor=FF4F8B
+[Gateway-url]: https://aws.amazon.com/api-gateway/
+[JavaScript]: https://img.shields.io/badge/JavaScript-20232A?style=for-the-badge&logo=javascript&logoColor=61DAFB
+[JavaScript-url]: https://javascript.com/
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
+[Java]: https://img.shields.io/badge/Java-darkgreen?style=for-the-badge
+[Java-url]: https://java.com/
+[AWS CloudFront]: https://img.shields.io/badge/AWS_CloudFront-orange?style=for-the-badge
+[Cloudfront-url]: https://aws.amazon.com/cloudfront/
+[AWS CloudFormation]: https://img.shields.io/badge/AWS_CloudFormation-red?style=for-the-badge
+[Cloudformation-url]: https://aws.amazon.com/cloudformation/
