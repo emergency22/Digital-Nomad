@@ -97,43 +97,37 @@ I also discovered that it may be best to have team members focus on particular a
 
 
 
-<!-- GETTING STARTED -->
-## Getting Started
+## Initial Setup
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+1. Use an Amazon AWS account.
+2. Install AWS CLI. [Documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+3. Install AWS SAM CLI. [Documentation](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html)
+4. Install NodeJS to run the npm commands below.
 
-### Prerequisites and Installation
-
-1. Create or use an existing Amazon AWS account.
-2. Install the latest version of AWS CLI. [Link to documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-3. Install the latest version of AWS SAM CLI. [Link to documentation](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html)
-4. Install NodeJS before you can run some of the commands below (the `npm` ones).
-
-- On Windows / WSL:
+- For Windows / WSL users:
 ```shell
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&\
 sudo apt-get install -y nodejs
 ```
-- On macOS:
+- For Mac users:
 ```shell
 brew install node
 ```
 
-### Run Locally
+### Backend Setup via Lambda Service
+1. Build the Java code: `sam build`
+2. Create an S3 bucket: `aws s3 mb s3://YOUR_BUCKET`
+3. Deploy the SAM template: `sam deploy --s3-bucket BUCKET_FROM_ABOVE --parameter-overrides S3Bucket=BUCKET_FROM_ABOVE FrontendDeployment=local`
+   > **NOTE:** _Yes you have to provide the same S3 bucket name twice. Yes this is annoying._
+4. Run the local API: `sam local start-api --warm-containers LAZY`
 
-3. Run the Lambda service (aka the backend):
-    - Build the Java code: `sam build`
-    - Create an S3 bucket: `aws s3 mb s3://YOUR_BUCKET`
-    - Deploy the SAM template: `sam deploy --s3-bucket BUCKET_FROM_ABOVE --parameter-overrides S3Bucket=BUCKET_FROM_ABOVE FrontendDeployment=local`
-      > **NOTE:** _Yes you have to provide the same S3 bucket name twice. Yes this is annoying._
-    - Run the local API: `sam local start-api --warm-containers LAZY`
-4. Run a local web server (aka the frontend):
-    - CD into the web directory: `cd web`
-    - Install dependencies : `npm install`
-    - Run the local server: `npm run run-local`
-    -  > **NOTE:** Only songs found in the song table can be added to the playlist.
 
+### Frontend Setup
+1. CD into the web directory: `cd web`
+2. Install dependencies : `npm install`
+3. Run the local server: `npm run run-local` 
+- > **NOTE:** Only songs found in the song table can be added to the playlist.
+  
 After doing all of this, you will have a server running on port `8000` - you can access it by going to [http://localhost:8000](http://localhost:8000) in your browser.
 
 To stop either the local backend (the `sam local...` command) or local frontend (the `npm run...`) command, simply press `Ctrl-C` in the terminal where the process is running.
