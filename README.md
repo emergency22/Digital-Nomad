@@ -4,7 +4,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="resources/images/logo.png" alt="Logo" width="80" height="80">
+    <img src="resources/images/logo.PNG" alt="Logo" width="80" height="80">
 
 <h3 align="center">Digital Nomad</h3>
 
@@ -14,11 +14,11 @@
   </p>
 </div>
 
----
+___
 
 ## Synopsis
 
-<img src="resources/images/frontpage.png">
+<img src="resources/images/frontpage.PNG">
 
 Digital Nomad is a "mid-stone" group project at Nashville Software School. Contributors to this project include Alex Murillo, Erika Smith, Matt Marotta, and Steve Winters.
 
