@@ -6,11 +6,10 @@ on:
       - 'main'
       - 'feature**'
 
-
 env:
 
   # STUDENTS: Set this to the current API Gateway Resource ID
-  U5_API_RESOURCE_ID: uxq0vdtsqc
+  U5_API_RESOURCE_ID: TODO-REPLACE
 
   GH_PACKAGE_REG_READ_USER: ${{ secrets.GH_PACKAGE_REG_READ_USER }}
   GH_PACKAGE_REG_READ_PASS: ${{ secrets.GH_PACKAGE_REG_READ_PASS }}
@@ -19,10 +18,10 @@ env:
   PIPELINE_USER_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
   SAM_TEMPLATE: template.yaml
 
-  STACK_NAME: music-playlist-service
-  PIPELINE_EXECUTION_ROLE: arn:aws:iam::221084034884:role/aws-sam-cli-managed-ServiceS-PipelineExecutionRole-1H5O5KQXEYU73
-  CLOUDFORMATION_EXECUTION_ROLE: arn:aws:iam::221084034884:role/aws-sam-cli-managed-Servi-CloudFormationExecutionR-1AZ185P4USMRZ
-  ARTIFACTS_BUCKET: aws-sam-cli-managed-servicestage-artifactsbucket-wr4c6u20prad
+  STACK_NAME: digital-nomad-individual
+  PIPELINE_EXECUTION_ROLE: arn:aws:iam::540519663306:role/aws-sam-cli-managed-ServiceS-PipelineExecutionRole-5KT3SWL795FP
+  CLOUDFORMATION_EXECUTION_ROLE: arn:aws:iam::540519663306:role/aws-sam-cli-managed-Servi-CloudFormationExecutionR-125IQ38D5HI4H
+  ARTIFACTS_BUCKET: aws-sam-cli-managed-servicestage-artifactsbucket-gtitw1r5szm7
   REGION: us-east-2
 
 jobs:
