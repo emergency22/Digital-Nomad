@@ -49,7 +49,7 @@ I also discovered that it may be best to have team members focus on particular a
 
 ##View This Project
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dHkNxV84Lhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![Youtube Video](resources/images/youtube.PNG)](https://www.youtube.com/embed/dHkNxV84Lhk)
 
 <p>View this project: <a href="https://youtu.be/dHkNxV84Lhk"><b>here<b></a>.</p>
 
