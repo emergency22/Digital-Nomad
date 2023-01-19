@@ -47,7 +47,7 @@ I also discovered that it may be best to have team members focus on particular a
 
 —
 
-##View This Project
+## View This Project
 
 [![Youtube Video](resources/images/youtube.PNG)](https://www.youtube.com/embed/dHkNxV84Lhk)
 
